@@ -100,6 +100,7 @@
 pub use config::{Config, RecursiveMode};
 pub use error::{Error, ErrorKind, Result};
 pub use event::{Event, EventKind};
+pub use debouncer::new_debouncer;
 use std::convert::AsRef;
 use std::path::Path;
 
@@ -123,6 +124,7 @@ pub mod event;
 pub mod null;
 pub mod poll;
 
+mod debouncer;
 mod config;
 mod error;
 
